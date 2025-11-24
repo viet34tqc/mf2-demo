@@ -1,5 +1,5 @@
 {
-  "name": "mf1",
+  "name": "@mf/mf1",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -11,7 +11,8 @@
   "dependencies": {
     "@module-federation/enhanced": "^0.21.2",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "@mf/ui": "workspace:*"
   },
   "devDependencies": {
     "@module-federation/rsbuild-plugin": "^0.21.2",

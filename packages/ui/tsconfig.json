@@ -21,13 +21,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    /* paths */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@mf/ui": ["../../packages/ui/src/index.tsx"],
-      "@mf/ui/*": ["../../packages/ui/src/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "ui", "src/components"]
 }
