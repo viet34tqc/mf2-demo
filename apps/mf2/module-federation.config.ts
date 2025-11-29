@@ -4,7 +4,7 @@ import { dependencies } from './package.json';
 const mfConfig = createModuleFederationConfig({
   name: 'remote',
   exposes: {
-    './Csa': './src/App.tsx',
+    './App': './src/App.tsx',
   },
   filename: 'remoteEntry.js',
   shared: {
@@ -13,6 +13,9 @@ const mfConfig = createModuleFederationConfig({
       singleton: true,
     },
     'react-dom': {
+      singleton: true,
+    },
+    'react-router-dom': {
       singleton: true,
     },
   },
