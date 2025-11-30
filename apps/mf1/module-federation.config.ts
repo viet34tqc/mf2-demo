@@ -13,6 +13,9 @@ const mfConfig = createModuleFederationConfig({
     'react-dom': {
       singleton: true,
     },
+    'react-router-dom': {
+      singleton: true,
+    },
   },
 });
 

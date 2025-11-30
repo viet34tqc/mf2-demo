@@ -9,7 +9,7 @@ export default defineConfig({
     port: 3001,
   },
   plugins: [pluginReact(), pluginModuleFederation(mfConfig)],
-  source: {
+  resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },

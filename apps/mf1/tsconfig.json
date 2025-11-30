@@ -26,7 +26,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@mf/ui": ["../../packages/ui/src/index.tsx"],
-      "@mf/ui/*": ["../../packages/ui/src/*"]
+      "@mf/ui/*": ["../../packages/ui/src/*"],
+      "remote/Csa": ["../mf2/src/App"]
     }
   },
   "include": ["src"]
