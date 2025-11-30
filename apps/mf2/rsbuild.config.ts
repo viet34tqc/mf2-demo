@@ -8,6 +8,9 @@ export default defineConfig({
   server: {
     port: 3002,
   },
+  output: {
+    assetPrefix: 'http://localhost:3002/',
+  },
   plugins: [pluginReact(), pluginModuleFederation(mfConfig)],
   resolve: {
     alias: {

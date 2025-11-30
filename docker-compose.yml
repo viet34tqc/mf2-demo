@@ -1,0 +1,22 @@
+services:
+  mf1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: mf1
+    ports:
+      - '3001:80'
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  mf2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: mf2
+    ports:
+      - '3002:80'
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
