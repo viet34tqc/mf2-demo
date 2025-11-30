@@ -1,6 +1,14 @@
 # Build stage
 FROM node:25-alpine AS builder
 
+# Build arguments
+ARG MF1_URL=http://localhost:3001
+ARG MF2_URL=http://localhost:3002
+
+# Set as environment variables
+ENV MF1_URL=$MF1_URL
+ENV MF2_URL=$MF2_URL
+
 # Install pnpm
 RUN npm install -g pnpm@10.21.0
 

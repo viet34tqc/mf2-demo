@@ -1,9 +1,11 @@
 import { createModuleFederationConfig } from '@module-federation/enhanced';
 
+const MF2_URL = process.env.MF2_URL || 'http://localhost:3002';
+
 const mfConfig = createModuleFederationConfig({
   name: 'host',
   remotes: {
-    remote: 'remote@http://localhost:3002/remoteEntry.js',
+    remote: `remote@${MF2_URL}/remoteEntry.js`,
   },
   filename: 'remoteEntry.js',
   shared: {
